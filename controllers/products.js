@@ -1,11 +1,5 @@
 const Product = require("../models/product");
 
-const getAllProductsStatic = async (req, res) => {
-  const products = await Product.find({ price: { $gt: 100 } }).sort("price");
-
-  res.status(200).json({ products, nbHits: products.length });
-};
-
 const getQueryObject = (req) => {
   const { featured, company, name, numericFilters } = req.query;
   const queryObject = {};
