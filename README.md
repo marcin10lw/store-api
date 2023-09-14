@@ -36,9 +36,9 @@ To use this API, you need to have Node.js and MongoDB installed on your system. 
 
 5. Start the server.
 
-```bash
-  npm start
-```
+   ```bash
+   npm start
+   ```
 
 The server should now be running locally at `http://localhost:3000`
 
